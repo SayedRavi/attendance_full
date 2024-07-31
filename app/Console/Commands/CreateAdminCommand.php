@@ -28,10 +28,10 @@ class CreateAdminCommand extends Command
     {
         if (User::where('email','admin@admin.com') != null){
             User::create([
-                'name' => 'Ravi',
+                'name' => 'Admin',
                 'email' => 'admin@admin.com',
                 'role' => 'admin',
-                'password' => 'php123',
+                'password' => '123456',
             ]);
             $this->info('User Created Successfully');
         }else{
